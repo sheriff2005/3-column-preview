@@ -1,0 +1,114 @@
+/*'Lexend Deca', sans-serif;*/
+*{
+ margin: 0px;
+ padding: 0px;   
+}
+:root{
+    --bo:hsl(31,77%,52%);
+    --dc:hsl(184,100%,22%);
+    --vdc:hsl(179,100%,13%);
+    --t-white:hsla(0,0%,100%,0.75);
+    --vlg:hsl(0,0%,95%);
+}
+body{
+    translate:translate(-50%,-50%);
+    font-family:'Lexend Deca', sans-serif; ;
+    font-size: 15px;
+    font-weight: 400;
+}
+.container{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    margin-top:250px;
+    margin-left: 250px;
+    margin-right:250px;
+    height:350px;
+}
+.item-1{
+    border-radius: 10px 0 0 10px;
+    background-color:var(--bo);
+    padding:40px;
+    color: var(--t-white);
+    height:320px;
+}
+.item-2{
+    background-color:var(--dc);
+    padding:40px;
+    color: var(--t-white);
+    height:320px;
+    box-shadow: 2px 0 4px var(--dc);
+}
+.item-3{
+    border-radius: 0 10px 10px 0;
+    background-color:var(--vdc);
+    padding:40px;
+    color: var(--t-white);
+    height:320px;
+}
+/*content*/
+svg{
+    margin-bottom: 30px;
+}
+h1{
+    margin-bottom: 30px;
+}
+p{
+    margin-bottom: 60px;
+}
+button{
+    color:var(--t-white);
+    height:35px;
+    width:100px;
+    border-radius: 20px;
+}
+.btn-1:hover{
+    color:var(--t-white);
+    background-color: var(--bo);
+}
+.btn-2:hover{
+    color:var(--t-white);
+    background-color: var(--dc);
+}
+.btn-3:hover{
+    color:var(--t-white);
+    background-color: var(--vdc);
+}
+.btn-1{
+    background-color: var(--t-white);
+    color:var(--bo)
+}
+.btn-2{
+    background-color: var(--t-white);
+    color:var(--dc);
+}
+.btn-3{
+    background-color: var(--t-white);
+    color:var(--vdc);
+}
+footer{
+    margin-top: 100px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+/*media queries*/
+@media(max-width:375px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        width:80%;
+        margin:40px auto;
+    } 
+    footer{
+        margin-top: 820px;
+    }
+    .item-1{
+        border-radius: 10px 10px 0 0;
+    }
+    .item-2{
+        box-shadow: 0px 0px 0px;
+    }
+    .item-3{
+        border-radius:0 0 10px 10px;
+    }
+}
+
